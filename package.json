@@ -1,0 +1,22 @@
+{
+  "name": "secret",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yjx199908/secret.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yjx199908/secret/issues"
+  },
+  "homepage": "https://github.com/yjx199908/secret#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
