@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .t1,.t2{
+            text-align: center;
+        }
+        
+        .btn-con{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .btn{
+            width:80px;
+            height: 50px;
+        }
+    </style>
+    <script>
+        function suc(){
+            alert('回答正确~ 爱你呦~')
+        }
+    </script>
+</head>
+<body>
+    <div class="t1">问卷调查</div>
+    <div class="t2">请问你是袁吉星家的小宝贝嘛?</div>
+    <div class="btn-con">
+        <button class="btn" onclick="suc()">YES</button>
+        <button class="btn" id="moveBtn">NO</button>
+    </div>
+
+    <script>
+        window.onload = function(){
+            let btn = document.getElementById("moveBtn");
+
+            btn.onmousedown = function(){
+                btn.style.opacity = 0
+            }
+
+            btn.onmouseleave = btn.onmouseup = function(){
+                btn.style.opacity = 1
+            }
+        }
+
+        function suc(){
+            alert('回答正确~ 爱你呦~')
+        }
+    </script>
+</body>
+</html>
